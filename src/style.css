@@ -1,0 +1,104 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  color-scheme: light dark;
+  color: #454545;
+  background-color: #f5f5f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --background-color-1: #fff;
+
+  --button-background-color: #0ea5e9;
+  --button-background-color-hover: #38bdf8;
+  --button-color: #fff;
+
+  --input-border-color: #d0d0d0;
+  --input-border-color-focus: #2980b9;
+
+  --error-message-color: #b91c1c;
+  --error-message-background-color: #fecaca;
+  --error-message-font-size: 16px;
+
+  --border-color-1: #454545;
+  --border-color-2: #959595;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-700 {
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 20px;
+}
+
+button {
+  position: relative;
+  padding: 8px 16px;
+  border: 0;
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-background-color-hover);
+}
+
+input[type="text"] {
+  border: 1px solid var(--input-border-color);
+  padding: 8px 16px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--input-border-color-focus);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.error-message {
+  position: relative;
+  width: 100%;
+  background-color: var(--error-message-background-color);
+  color: var(--error-message-color);
+  text-transform: capitalize;
+  font-size: var(--error-message-font-size);
+  padding: 8px 16px;
+}
+
+.wrapper {
+  position: relative;
+  margin: auto;
+  width: 75%;
+}
